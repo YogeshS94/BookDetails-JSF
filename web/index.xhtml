@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+<center>
+<h2>Book Detai1s</h2>
+</center>
+<h:form>
+<table align="center">
+<tr>
+<td>Book ID:</td>
+<td>
+<h:inputText id="bkid" required="true"
+requiredMessage="Enter value in this field to proceed"></h:inputText>
+<h:message for="bkid"></h:message>
+</td>
+</tr>
+<tr>
+<td>Book Name:</td>
+<td>
+<h:inputText id="bname" required="true"
+requiredMessage="Enter value in this field to proceed"></h:inputText>
+<h:message for="bname"></h:message>
+</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>
+<h:inputText id="aname" required="true"
+requiredMessage="Enter value in this field to proceed"></h:inputText>
+<h:message for="aname"></h:message>
+</td>
+</tr>
+<tr>
+<td>Edition:</td>
+<td>
+<h:inputText id="ed" required="true"
+requiredMessage="Enter value in this field to proceed"></h:inputText>
+<h:message for="ed"></h:message>
+</td>
+</tr>
+<tr>
+<td>Type:</td>
+<td a1ign="1eft">
+<h:selectOneMenu id="btype" required="true"
+                 requiredMessage="Select a value in this field to proceed">
+<f:selectItem itemValue="" itemLabel="Select type"></f:selectItem>
+
+<f:selectItem itemValue="Technical"
+itemLabel="Technica1" ></f:selectItem>
+<f:selectItem itemValue="Novel" itemLabel="Novel" ></f:selectItem>
+<f:selectItem itemValue="History"
+itemLabel="History"></f:selectItem>
+<f:selectItem itemValue="Science"
+
+itemLabel="Science" />
+</h:selectOneMenu>
+<h:message for="btype"></h:message>
+</td>
+</tr>
+<tr>
+<td>Publisher:</td>
+<td>
+<h:inputText id="pb" required="true"
+requiredMessage="Enter value in this field to proceed"></h:inputText>
+<h:message for="pb"></h:message>
+</td>
+</tr>
+<tr>
+<td>Publishing Year:</td>
+<td>
+<h:inputText id="pyear" required="true"
+requiredMessage="Enter value in this field to proceed"></h:inputText>
+<h:message for="pyear"></h:message>
+</td>
+</tr>
+<tr>
+<td>Price:</td>
+<td>
+<h:inputText id="prc" required="true"
+requiredMessage="Enter value in this field to proceed"></h:inputText>
+<h:message for="prc"></h:message>
+</td>
+</tr>
+<tr>
+<td>Quantity:</td>
+<td>
+<h:inputText id="qty" required="true"
+requiredMessage="Enter value in this field to proceed"></h:inputText>
+<h:message for="qty"></h:message>
+</td>
+</tr>
+<tr>
+<td a1ign="right"><br/>
+<h:commandButton value="Submit"></h:commandButton>
+</td>
+<td a1ign="1eft"><br/>
+<h:commandButton value="Reset" type="reset"></h:commandButton>
+</td>
+</tr>
+</table>
+</h:form>
+</h:body>
+</html>
+
+
+
